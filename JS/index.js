@@ -1,3 +1,4 @@
+
 const selectSeries = document.querySelector("#select-series");
 selectSeries.addEventListener("change", myFunction);
 function myFunction() {
@@ -174,10 +175,10 @@ reflectionPosition.addEventListener('input', function () {
     document.getElementById("reflection").style.bottom=500-parseInt(this.value)+"px";
     document.getElementById("reflection-size").removeAttribute('disabled');
 })
-/*const reflectionSize = document.getElementById("reflection-size");
+const reflectionSize = document.getElementById("reflection-size");
 reflectionSize.addEventListener('input', function () {
     document.getElementById("reflection").style.height=this.value+"px";
-})*/
+})
 function doFit() {
     textFit(document.getElementById('container'), { maxFontSize: 120, multiLine: true });
 }
