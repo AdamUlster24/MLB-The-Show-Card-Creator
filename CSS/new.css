@@ -1,0 +1,141 @@
+@font-face {
+  font-family: Castelar;
+  src: url("../fonts/CASTELAR.ttf");
+}
+@font-face {
+    font-family: Qanelas;
+    src: url("../fonts/Qanelas-Medium.ttf");
+}
+@font-face {
+  font-family: Didot;
+  src: url("../fonts/Didot LT Std Bold.otf");
+}
+.container-of-image-with-text {
+  position: relative;
+  display: inline-block;
+  width: 370.4px;
+  height: 522.42px;
+  text-align: center;
+ }
+ .custom-select {
+  float: left;
+}
+.image {
+  position: relative;
+  float: right;
+  max-width: 100%;
+  max-height: 100%;
+}
+#player-name {
+  position: relative;
+  top: 10px;
+}
+#player-space {
+  position: relative;
+  top: 20px;
+}
+#player-overall {
+  position: relative;
+  top: 30px;
+}
+#player-year {
+  position: relative;
+  top: 40px;
+}
+#select-position {
+  position: relative;
+  top: 50px;
+}
+#photo {
+  position: relative;
+  top: 50px;
+}
+#player-size {
+  position: relative;
+  top: 50px;
+}
+#player-top-bottom {
+  position: relative;
+  top: 60px;
+}
+#player-left-right {
+  position: relative;
+  top: 70px;
+}
+#add-reflection {
+  position: relative;
+  top: 80px;
+}
+#reflection-position {
+  position: relative;
+  top: 90px;
+}
+#reflection-size {
+  position: relative;
+  top: 100px;
+}
+#download {
+  position: relative;
+  top: 110px;
+}
+#container {
+  position: relative;
+  top: 400px;
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  white-space: nowrap;
+}
+#player {
+  position: relative;
+  font-family: Castelar;
+  color: white;
+  margin: auto;
+}
+#overall {
+  position: relative;
+  font-size: 35px;
+  font-family: Qanelas;
+  color: white;
+  margin: auto;
+  bottom: 510px;
+  left: 143px;
+  margin: auto;
+}
+#year {
+  position: relative;
+  font-size: 15px;
+  font-family: Didot;
+  color: black;
+  bottom: 560px;
+  padding-left: 5px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: auto;
+}
+#position-on-card {
+  position: relative;
+  font-family: Didot;
+  color: black;
+  text-align: center;
+  margin: auto;
+}
+#output {
+  position: relative;
+  display: none;
+  width: 100%;
+  height: auto;
+  bottom: 500px;
+  z-index: 1;
+}
+#reflection {
+  position: relative;
+  display: none;
+  width: 100%;
+  height: auto;
+  bottom: 400px;
+  z-index: 2;
+  opacity: 0.5;
+  transform: rotate(180deg);
+  transform: scaleY(-1);
+}
