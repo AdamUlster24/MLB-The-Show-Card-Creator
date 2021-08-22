@@ -188,10 +188,3 @@ doFit();
     console.log(canvas.toDataURL("image/jpg"))
     })
 }*/
-domtoimage.toJpeg(document.querySelector(".container-of-image-with-text"))
-.then(function (dataUrl) {
-    var link = document.getElementById("download");
-    link.download = 'my_image-name.jpeg';
-    link.href=DataUrl;
-    link.click();
-});
