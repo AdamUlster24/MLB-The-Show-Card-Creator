@@ -100,6 +100,9 @@
   margin: auto;
   bottom: 510px;
   left: 143px;
+  padding-left: 2px;
+  letter-spacing: 2px;
+  text-shadow: -2px 0px black;
   margin: auto;
 }
 #year {
