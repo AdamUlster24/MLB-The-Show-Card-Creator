@@ -172,7 +172,7 @@ addReflection.addEventListener('click', function () {
 })
 const reflectionPosition = document.getElementById("reflection-position");
 reflectionPosition.addEventListener('input', function () {
-    document.getElementById("reflection").style.bottom=500-parseInt(this.value)+"px";
+    document.getElementById("reflection").style.bottom=400-parseInt(this.value)+"px";
     document.getElementById("reflection-size").removeAttribute('disabled');
 })
 const reflectionSize = document.getElementById("reflection-size");
