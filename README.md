@@ -1,4 +1,4 @@
-**MLB The Show Awards Card Creator**
+**MLB The Show Awards Card Creator**  
 
 **Select type of awards card:** Select what type of awards card you would like to make (ex. silver slugger)
 **Please enter player name:** Enter player name
