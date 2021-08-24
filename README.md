@@ -1,4 +1,9 @@
-**MLB The Show Awards Card Creator**  
+**MLB The Show Awards Card Creator**</br>
+
+**To use**</br>
+https://salad24.github.io/MLB-The-Show-Awards-Card-Creator/</br></br>
+
+**For help on how to use the wesite, please refer to the following:**</br></br>
 
 **Select type of awards card:**</br>Select what type of awards card you would like to make (ex. silver slugger)</br></br>
 **Please enter player name:**</br>Enter player name</br></br>
