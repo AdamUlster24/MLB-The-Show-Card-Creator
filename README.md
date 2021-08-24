@@ -20,4 +20,4 @@ Note: There's no download function available yet. To take a screenshot of the pl
 Press "Windows + Shift + S"</br>
 
 **Mac**</br>
-Press "Shift-Command-4"</br>
+Press "Shift-Command-4"
