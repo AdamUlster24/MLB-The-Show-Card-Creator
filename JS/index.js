@@ -1,4 +1,3 @@
-
 const selectSeries = document.querySelector("#select-series");
 selectSeries.addEventListener("change", myFunction);
 function myFunction() {
@@ -183,8 +182,3 @@ function doFit() {
     textFit(document.getElementById('container'), { maxFontSize: 120, multiLine: true });
 }
 doFit();
-/*function saveCanvas() {
-    html2canvas(document.querySelector(".container-of-image-with-text")).then(function(canvas) {
-    console.log(canvas.toDataURL("image/jpg"))
-    })
-}*/

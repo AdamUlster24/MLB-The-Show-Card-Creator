@@ -2,61 +2,61 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="CSS/new.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <script src="JS/textFit.js"></script>
-    <script src="JS/html2canvas.min.js"></script>
-    <script src="JS/jquery.min.js"></script>
     <script defer src="JS/index.js"></script>
- 
-    <title>MLB The Show Card Creator</title>
+
+    <title>MLB The Show Awards Card Creator</title>
 </head>
 
 <body>
-    <h2>MLB The Show Card Creator</h2>
-        <div class="custom-select" style="width:200px;">
-            <select id="select-series">
-                <option value="0">Select type of awards card:</option>
-                <option value="gold-glove">Gold Glove</option>
-                <option value="silver-slugger">Silver Slugger</option>
-            </select>
-            <input type="text" id="player-name" size="23" placeholder="Please enter player name" disabled>
-            <input type="text" id="player-space" size="23" placeholder="Please enter space (ex. 15)" disabled>
-            <input type="text" id="player-overall" size="23" placeholder="Please enter player overall" disabled>
-            <input type="text" id="player-year" size="23" placeholder="Please enter player year" disabled>
-            <select id="select-position" disabled>
-                <option value="0">Select position:</option>
-                <option value="starting-pitcher">Starting Pitcher</option>
-                <option value="closing-pitcher">Closing Pitcher</option>
-                <option value="catcher">Catcher</option>
-                <option value="first-base">First Base</option>
-                <option value="second-base">Second Base</option>
-                <option value="third-base">Third Base</option>
-                <option value="shortstop">Shortstop</option>
-                <option value="left-field">Left Field</option>
-                <option value="center-field">Center Field</option>
-                <option value="right-field">Right Field</option>
-            </select>
-            <input type="file" accept="image/*" name="photo" id="file" onchange="loadFile(event)" style="display: none;" disabled>
-            <p><label for="file" id="photo" style="cursor: pointer; color:grey; border: solid 1px grey;">Upload Image</label></p>
-            <input type="text" id="player-size" size="23" placeholder="Please enter player size" disabled>
-            <input type="text" id="player-top-bottom" size="23" placeholder="Please enter top/bottom value" disabled>
-            <input type="text" id="player-left-right" size="23" placeholder="Please enter left/right value" disabled>
-            <button id="add-reflection" disabled>Add Reflection</button>
-            <input type="text" id="reflection-position" size="23" placeholder="Please enter reflection position" disabled>
-            <input type="text" id="reflection-size" size="23" placeholder="Please enter reflection size" disabled>
+    <h2>MLB The Show Awards Card Creator</h2>
+    <div class="custom-select" style="width:200px;">
+        <select id="select-series">
+            <option value="0">Select type of awards card:</option>
+            <option value="gold-glove">Gold Glove</option>
+            <option value="silver-slugger">Silver Slugger</option>
+        </select>
+        <input type="text" id="player-name" size="23" placeholder="Please enter player name" disabled>
+        <input type="text" id="player-space" size="23" placeholder="Please enter space (ex. 15)" disabled>
+        <input type="text" id="player-overall" size="23" placeholder="Please enter player overall" disabled>
+        <input type="text" id="player-year" size="23" placeholder="Please enter player year" disabled>
+        <select id="select-position" disabled>
+            <option value="0">Select position:</option>
+            <option value="starting-pitcher">Starting Pitcher</option>
+            <option value="closing-pitcher">Closing Pitcher</option>
+            <option value="catcher">Catcher</option>
+            <option value="first-base">First Base</option>
+            <option value="second-base">Second Base</option>
+            <option value="third-base">Third Base</option>
+            <option value="shortstop">Shortstop</option>
+            <option value="left-field">Left Field</option>
+            <option value="center-field">Center Field</option>
+            <option value="right-field">Right Field</option>
+        </select>
+        <input type="file" accept="image/*" name="photo" id="file" onchange="loadFile(event)" style="display: none;"
+            disabled>
+        <p><label for="file" id="photo" style="cursor: pointer; color:grey; border: solid 1px grey;">Upload
+                Image</label></p>
+        <input type="text" id="player-size" size="23" placeholder="Please enter player size" disabled>
+        <input type="text" id="player-top-bottom" size="23" placeholder="Please enter top/bottom value" disabled>
+        <input type="text" id="player-left-right" size="23" placeholder="Please enter left/right value" disabled>
+        <button id="add-reflection" disabled>Add Reflection</button>
+        <input type="text" id="reflection-position" size="23" placeholder="Please enter reflection position" disabled>
+        <input type="text" id="reflection-size" size="23" placeholder="Please enter reflection size" disabled>
+    </div>
+    <div class="container-of-image-with-text">
+        <img class="image" src="">
+        <div id="container">
+            <p id="player"></p>
         </div>
-        <div class="container-of-image-with-text">
-            <img class="image" src="">
-            <div id="container">
-                <p id="player"></p>
-            </div>
-            <p id="overall"></p>
-            <p id="year"></p>
-            <p id="position-on-card"></p>
-                <img id="output" width="200px" src="">
-                <img id="reflection" width="200px" src="">
-        </div>
-        </div>
+        <p id="overall"></p>
+        <p id="year"></p>
+        <p id="position-on-card"></p>
+        <img id="output" width="200px" src="">
+        <img id="reflection" width="200px" src="">
+    </div>
+    </div>
 </body>
 
 </html>
