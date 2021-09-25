@@ -1,22 +1,41 @@
 const selectSeries = document.querySelector("#select-series");
 selectSeries.addEventListener("change", myFunction);
 function myFunction() {
-    if (this.value === "gold-glove") {
+    if (this.value === "cy-young") {
+        cyYoung();
+    } else if (this.value === "gold-glove") {
         goldGlove();
+    } else if (this.value === "mvp") {
+        MVP();
+    } else if (this.value === "rookie-of-the-year") {
+        rookieOfTheYear();
     } else if (this.value === "silver-slugger") {
         silverSlugger();
     }
 }
+function cyYoung() {
+    const img = document.getElementsByClassName("image")[0];
+    img.src = "https://cdn.discordapp.com/attachments/872655528466190357/891089926706315274/image4.png";
+    document.getElementById("player-name").removeAttribute('disabled');
+}
 function goldGlove() {
     const img = document.getElementsByClassName("image")[0];
-    img.src =
-        "https://pbs.twimg.com/media/EpYMglbU8AAgUOv?format=jpg&name=medium";
+    img.src = "https://cdn.discordapp.com/attachments/872655528466190357/891089927050252308/image5.png";
+    document.getElementById("player-name").removeAttribute('disabled');
+}
+function MVP() {
+    const img = document.getElementsByClassName("image")[0];
+    img.src = "https://cdn.discordapp.com/attachments/872655528466190357/891089925821321296/image2.png";
+    document.getElementById("player-name").removeAttribute('disabled');
+}
+function rookieOfTheYear() {
+    const img = document.getElementsByClassName("image")[0];
+    img.src = "https://cdn.discordapp.com/attachments/872655528466190357/891092525488676884/image0.png";
     document.getElementById("player-name").removeAttribute('disabled');
 }
 function silverSlugger() {
     const img = document.getElementsByClassName("image")[0];
-    img.src =
-        "https://pbs.twimg.com/media/EpyEIGPVoAICmri?format=jpg&name=medium";
+    img.src = "https://cdn.discordapp.com/attachments/872655528466190357/891089925448036422/image1.png";
     document.getElementById("player-name").removeAttribute('disabled');
 }
 const playerName = document.getElementById("player-name");
