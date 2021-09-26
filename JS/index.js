@@ -196,6 +196,7 @@ reflectionPosition.addEventListener('input', function () {
 const reflectionSize = document.getElementById("reflection-size");
 reflectionSize.addEventListener('input', function () {
     document.getElementById("reflection").style.height=this.value+"px";
+    document.getElementById("download").removeAttribute('disabled');
 })
 function doFit() {
     textFit(document.getElementById('container'), { maxFontSize: 120, multiLine: true });
