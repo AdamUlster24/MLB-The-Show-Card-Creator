@@ -41,7 +41,6 @@ function silverSlugger() {
 const playerName = document.getElementById("player-name");
 playerName.addEventListener('input', function () {
     document.getElementById("player").innerHTML = this.value;
-    downloadPlayerNameTransfer = this.value;
     doFit();
     document.getElementById("player-space").removeAttribute('disabled');
 })
