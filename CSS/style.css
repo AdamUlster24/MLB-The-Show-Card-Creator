@@ -6,10 +6,7 @@
     font-family: Qanelas;
     src: url("../fonts/QanelasSemiBold.otf");
 }
-@font-face {
-  font-family: Didot;
-  src: url("../fonts/Didot LT Std Bold.otf");
-}
+
 .container-of-image-with-text {
   position: relative;
   display: inline-block;
@@ -108,14 +105,12 @@
 #year {
   position: relative;
   font-size: 15px;
-  font-family: Didot;
+  font-family: Arial;
   color: black;
   bottom: 550px;
   padding-left: 6px;
   letter-spacing: 6px;
-  line-height: 15px;
   text-align: center;
-  vertical-align: middle;
   margin: auto;
 }
 #position-on-card {
