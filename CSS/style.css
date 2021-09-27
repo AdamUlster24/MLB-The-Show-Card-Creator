@@ -6,7 +6,10 @@
     font-family: Qanelas;
     src: url("../fonts/QanelasSemiBold.otf");
 }
-
+@font-face {
+  font-family: Didot;
+  src: url("../fonts/Didot LT Std Bold.otf");
+}
 .container-of-image-with-text {
   position: relative;
   display: inline-block;
@@ -105,9 +108,9 @@
 #year {
   position: relative;
   font-size: 15px;
-  font-family: Arial;
+  font-family: Didot;
   color: black;
-  bottom: 550px;
+  bottom: 37em;
   padding-left: 6px;
   letter-spacing: 6px;
   text-align: center;
