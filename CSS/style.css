@@ -106,16 +106,16 @@
   margin: auto;
 }
 #year {
-  position: relative;
+  position: absolute;
   font-size: 15px;
   font-family: Didot;
   color: black;
-  bottom: 550px;
-  padding-left: 6px;
+  bottom: 500px;
+  padding-left: 3px;
   letter-spacing: 6px;
   text-align: center;
   margin: auto;
-  -webkit-margin-start: 0px;
+  width: 100%;
 }
 #position-on-card {
   position: relative;
