@@ -110,11 +110,12 @@
   font-size: 15px;
   font-family: Didot;
   color: black;
-  bottom: 37em;
+  bottom: 550px;
   padding-left: 6px;
   letter-spacing: 6px;
   text-align: center;
   margin: auto;
+  -webkit-margin-start: 0px;
 }
 #position-on-card {
   position: relative;
