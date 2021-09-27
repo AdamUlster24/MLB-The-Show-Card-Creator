@@ -8,7 +8,7 @@
 }
 @font-face {
   font-family: Didot;
-  src: url("../fonts/DidotLTBold.otf");
+  src: url("../fonts/Didot LT Std Bold.otf");
 }
 .container-of-image-with-text {
   position: relative;
@@ -110,7 +110,7 @@
   font-size: 15px;
   font-family: Didot;
   color: black;
-  bottom: 560px;
+  bottom: 555.5px;
   padding-left: 6px;
   letter-spacing: 6px;
   text-align: center;
