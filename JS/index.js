@@ -89,70 +89,70 @@ function newFunction() {
 }
 function startingPitcher() {
     document.getElementById("position-on-card").style.fontSize="9px";
-    document.getElementById("position-on-card").style.bottom= "91px";
+    document.getElementById("position-on-card").style.bottom= "81px";
     document.getElementById("position-on-card").style.paddingLeft="5.5px";
     document.getElementById("position-on-card").style.letterSpacing="5.5px";
     document.getElementById("position-on-card").innerHTML = "STARTING"+"<br />"+"PITCHER";
 }
 function closingPitcher() {
     document.getElementById("position-on-card").style.fontSize="9px";
-    document.getElementById("position-on-card").style.bottom= "91px";
+    document.getElementById("position-on-card").style.bottom= "81px";
     document.getElementById("position-on-card").style.paddingLeft="5.5px";
     document.getElementById("position-on-card").style.letterSpacing="5.5px";
     document.getElementById("position-on-card").innerHTML = "CLOSING"+"<br />"+"PITCHER";
 }
 function catcher() {
     document.getElementById("position-on-card").style.fontSize="9px";
-    document.getElementById("position-on-card").style.bottom= "84px";
+    document.getElementById("position-on-card").style.bottom= "74px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px";
     document.getElementById("position-on-card").innerHTML = "CATCHER"
 }
 function firstBase() {
     document.getElementById("position-on-card").style.fontSize="8px";
-    document.getElementById("position-on-card").style.bottom= "83.5px";
+    document.getElementById("position-on-card").style.bottom= "73.5px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px"
     document.getElementById("position-on-card").innerHTML="FIRST BASE";
 }
 function secondBase() {
     document.getElementById("position-on-card").style.fontSize="8px";
-    document.getElementById("position-on-card").style.bottom= "83.5px";
+    document.getElementById("position-on-card").style.bottom= "73.5px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px"
     document.getElementById("position-on-card").innerHTML="SECOND BASE";
 }
 function thirdBase() {
     document.getElementById("position-on-card").style.fontSize="8px";
-    document.getElementById("position-on-card").style.bottom= "83.5px";
+    document.getElementById("position-on-card").style.bottom= "73.5px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px"
     document.getElementById("position-on-card").innerHTML="THIRD BASE";
 }
 function shortstop() {
     document.getElementById("position-on-card").style.fontSize="8px";
-    document.getElementById("position-on-card").style.bottom= "83.5px";
+    document.getElementById("position-on-card").style.bottom= "73.5px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px"
     document.getElementById("position-on-card").innerHTML="SHORTSTOP";
 }
 function leftField() {
     document.getElementById("position-on-card").style.fontSize="8px";
-    document.getElementById("position-on-card").style.bottom= "83.5px";
+    document.getElementById("position-on-card").style.bottom= "73.5px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px"
     document.getElementById("position-on-card").innerHTML="LEFT FIELD";
 }
 function centerField() {
     document.getElementById("position-on-card").style.fontSize="8px";
-    document.getElementById("position-on-card").style.bottom= "83.5px";
+    document.getElementById("position-on-card").style.bottom= "73.5px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px"
     document.getElementById("position-on-card").innerHTML="CENTER FIELD";
 }
 function rightField() {
     document.getElementById("position-on-card").style.fontSize="8px";
-    document.getElementById("position-on-card").style.bottom= "83.5px";
+    document.getElementById("position-on-card").style.bottom= "73.5px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px"
     document.getElementById("position-on-card").innerHTML="RIGHT FIELD";
@@ -197,6 +197,10 @@ const reflectionSize = document.getElementById("reflection-size");
 reflectionSize.addEventListener('input', function () {
     document.getElementById("reflection").style.height=this.value+"px";
     document.getElementById("download").removeAttribute('disabled');
+})
+const addReflectionGradient = document.getElementById("add-reflection-gradient");
+addReflectionGradient.addEventListener('click', function () {
+    document.getElementById("reflection")
 })
 function doFit() {
     textFit(document.getElementById('container'), { maxFontSize: 120, multiLine: true });
