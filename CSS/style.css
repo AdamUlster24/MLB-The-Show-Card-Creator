@@ -10,11 +10,23 @@
   font-family: Didot;
   src: url("../fonts/Didot LT Std Bold.otf");
 }
+#awards-card-creator {
+  position: relative;
+  width: 350px;
+  top: 100px;
+  left: 200px;
+  opacity:0.5;
+  transition: 1s ease;
+  }
+  
+  #awards-card-creator:hover{
+  opacity:1;
+  transition: 1s ease;
+  }
 .container-of-image-with-text {
   position: relative;
   display: inline-block;
   width: 370.4px;
-  height: 522.42px;
   text-align: center;
  }
  .custom-select {
@@ -87,8 +99,8 @@
   top: 400px;
   width: 300px;
   height: 100px;
-  margin: auto;
   white-space: nowrap;
+  margin: auto;
 }
 #player {
   position: relative;
@@ -114,11 +126,10 @@
   font-size: 15px;
   font-family: Didot;
   color: black;
-  bottom: 555.5px;
+  bottom: 571px;
   padding-left: 6px;
   letter-spacing: 6px;
   text-align: center;
-  margin: auto;
 }
 #position-on-card {
   position: relative;
