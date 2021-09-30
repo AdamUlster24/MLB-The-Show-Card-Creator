@@ -14,19 +14,26 @@
   position: relative;
   width: 350px;
   top: 100px;
-  left: 200px;
+  left: 250px;
   opacity:0.5;
   transition: 1s ease;
   }
-  
-  #awards-card-creator:hover{
+  #awards-card-creator:hover {
   opacity:1;
   transition: 1s ease;
+  }
+  #signature-coming-soon {
+    position: relative;
+    width: 350px;
+    top: 100px;
+    left: 300px;
+    opacity: 0.5;
   }
 .container-of-image-with-text {
   position: relative;
   display: inline-block;
   width: 370.4px;
+  height: 522.14px;
   text-align: center;
  }
  .custom-select {
@@ -114,12 +121,11 @@
   font-family: Qanelas;
   color: white;
   margin: auto;
-  bottom: 507px;
+  bottom: 505px;
   left: 142px;
   padding-left: 2px;
   letter-spacing: 2px;
   text-shadow: -2.5px 1.5px black;
-  margin: auto;
 }
 #year {
   position: relative;
@@ -136,7 +142,6 @@
   font-family: Didot;
   color: black;
   text-align: center;
-  margin: auto;
 }
 #output {
   position: relative;
@@ -152,20 +157,6 @@
   display: none;
   width: 100%;
   height: auto;
-  bottom: 400px;
-  z-index: 2;
-  opacity: 0.5;
-  transform: rotate(180deg);
-  transform: scaleY(-1);
-  object-fit: cover;
-  object-position: bottom;
-}
-#reflection-gradient {
-  position: relative;
-  display: none;
-  width: 100%;
-  height: auto;
-  bottom: 400px;
   z-index: 2;
   opacity: 0.5;
   transform: rotate(180deg);

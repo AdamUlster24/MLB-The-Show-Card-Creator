@@ -89,70 +89,70 @@ function newFunction() {
 }
 function startingPitcher() {
     document.getElementById("position-on-card").style.fontSize="9px";
-    document.getElementById("position-on-card").style.bottom= "81px";
+    document.getElementById("position-on-card").style.bottom= "110px";
     document.getElementById("position-on-card").style.paddingLeft="5.5px";
     document.getElementById("position-on-card").style.letterSpacing="5.5px";
     document.getElementById("position-on-card").innerHTML = "STARTING"+"<br />"+"PITCHER";
 }
 function closingPitcher() {
     document.getElementById("position-on-card").style.fontSize="9px";
-    document.getElementById("position-on-card").style.bottom= "81px";
+    document.getElementById("position-on-card").style.bottom= "110px";
     document.getElementById("position-on-card").style.paddingLeft="5.5px";
     document.getElementById("position-on-card").style.letterSpacing="5.5px";
     document.getElementById("position-on-card").innerHTML = "CLOSING"+"<br />"+"PITCHER";
 }
 function catcher() {
     document.getElementById("position-on-card").style.fontSize="9px";
-    document.getElementById("position-on-card").style.bottom= "74px";
+    document.getElementById("position-on-card").style.bottom= "103px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px";
     document.getElementById("position-on-card").innerHTML = "CATCHER"
 }
 function firstBase() {
     document.getElementById("position-on-card").style.fontSize="8px";
-    document.getElementById("position-on-card").style.bottom= "73.5px";
+    document.getElementById("position-on-card").style.bottom= "102.5px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px"
     document.getElementById("position-on-card").innerHTML="FIRST BASE";
 }
 function secondBase() {
     document.getElementById("position-on-card").style.fontSize="8px";
-    document.getElementById("position-on-card").style.bottom= "73.5px";
+    document.getElementById("position-on-card").style.bottom= "102.5px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px"
     document.getElementById("position-on-card").innerHTML="SECOND BASE";
 }
 function thirdBase() {
     document.getElementById("position-on-card").style.fontSize="8px";
-    document.getElementById("position-on-card").style.bottom= "73.5px";
+    document.getElementById("position-on-card").style.bottom= "102.5px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px"
     document.getElementById("position-on-card").innerHTML="THIRD BASE";
 }
 function shortstop() {
     document.getElementById("position-on-card").style.fontSize="8px";
-    document.getElementById("position-on-card").style.bottom= "73.5px";
+    document.getElementById("position-on-card").style.bottom= "102.5px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px"
     document.getElementById("position-on-card").innerHTML="SHORTSTOP";
 }
 function leftField() {
     document.getElementById("position-on-card").style.fontSize="8px";
-    document.getElementById("position-on-card").style.bottom= "73.5px";
+    document.getElementById("position-on-card").style.bottom= "102.5px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px"
     document.getElementById("position-on-card").innerHTML="LEFT FIELD";
 }
 function centerField() {
     document.getElementById("position-on-card").style.fontSize="8px";
-    document.getElementById("position-on-card").style.bottom= "73.5px";
+    document.getElementById("position-on-card").style.bottom= "102.5px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px"
     document.getElementById("position-on-card").innerHTML="CENTER FIELD";
 }
 function rightField() {
     document.getElementById("position-on-card").style.fontSize="8px";
-    document.getElementById("position-on-card").style.bottom= "73.5px";
+    document.getElementById("position-on-card").style.bottom= "102.5px";
     document.getElementById("position-on-card").style.paddingLeft="4px";
     document.getElementById("position-on-card").style.letterSpacing="4px"
     document.getElementById("position-on-card").innerHTML="RIGHT FIELD";
@@ -162,7 +162,7 @@ function loadFile(event) {
     photo.style.display="block";
     photo.src = URL.createObjectURL(event.target.files[0]);
     photoReflection = document.getElementById("reflection");
-    photoReflection.src=photo.src
+    photoReflection.src=photo.src;
     document.getElementById("player-size").removeAttribute('disabled');
 };
 const playerSize = document.getElementById("player-size");
@@ -190,7 +190,7 @@ addReflection.addEventListener('click', function () {
 })
 const reflectionPosition = document.getElementById("reflection-position");
 reflectionPosition.addEventListener('input', function () {
-    document.getElementById("reflection").style.bottom=400-parseInt(this.value)+"px";
+    document.getElementById("reflection").style.bottom=parseInt(window.getComputedStyle(document.getElementById("output")).bottom)-parseInt(this.value)+"px";
     document.getElementById("reflection-size").removeAttribute('disabled');
 })
 const reflectionSize = document.getElementById("reflection-size");
@@ -200,7 +200,9 @@ reflectionSize.addEventListener('input', function () {
 })
 const addReflectionGradient = document.getElementById("add-reflection-gradient");
 addReflectionGradient.addEventListener('click', function () {
-    document.getElementById("reflection")
+    document.getElementById("reflection").style.height=parseInt(document.getElementById("reflection-size").value) + 20 + "px";
+    document.getElementById("reflection").style.webkitMaskImage=`linear-gradient(to top, rgba(0, 0, 0, 1.0) ${parseInt(window.getComputedStyle(document.getElementById("reflection")).height)-20+"px"}, transparent)`;
+    document.getElementById("reflection").style.webkitMaskRepeat="no-repeat";
 })
 function doFit() {
     textFit(document.getElementById('container'), { maxFontSize: 120, multiLine: true });
