@@ -10,25 +10,6 @@
   font-family: Didot;
   src: url("../fonts/Didot LT Std Bold.otf");
 }
-#awards-card-creator {
-  position: relative;
-  width: 350px;
-  top: 100px;
-  left: 250px;
-  opacity:0.5;
-  transition: 1s ease;
-  }
-  #awards-card-creator:hover {
-  opacity:1;
-  transition: 1s ease;
-  }
-  #signature-coming-soon {
-    position: relative;
-    width: 350px;
-    top: 100px;
-    left: 300px;
-    opacity: 0.5;
-  }
 .container-of-image-with-text {
   position: relative;
   display: inline-block;

@@ -196,13 +196,14 @@ reflectionPosition.addEventListener('input', function () {
 const reflectionSize = document.getElementById("reflection-size");
 reflectionSize.addEventListener('input', function () {
     document.getElementById("reflection").style.height=this.value+"px";
-    document.getElementById("download").removeAttribute('disabled');
+    document.getElementById("add-reflection-gradient").removeAttribute('disabled');
 })
 const addReflectionGradient = document.getElementById("add-reflection-gradient");
 addReflectionGradient.addEventListener('click', function () {
     document.getElementById("reflection").style.height=parseInt(document.getElementById("reflection-size").value) + 20 + "px";
     document.getElementById("reflection").style.webkitMaskImage=`linear-gradient(to top, rgba(0, 0, 0, 1.0) ${parseInt(window.getComputedStyle(document.getElementById("reflection")).height)-20+"px"}, transparent)`;
     document.getElementById("reflection").style.webkitMaskRepeat="no-repeat";
+    document.getElementById("download").removeAttribute('disabled');
 })
 function doFit() {
     textFit(document.getElementById('container'), { maxFontSize: 120, multiLine: true });

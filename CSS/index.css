@@ -1,0 +1,31 @@
+#awards-card-creator {
+    position: relative;
+    width: 250px;
+    top: 50px;
+    left: 300px;
+    opacity:0.5;
+    transition: 1s ease;
+}
+#awards-card-creator:hover {
+    opacity:1;
+    transition: 1s ease;
+}
+#signature-coming-soon {
+    position: relative;
+    width: 250px;
+    top: 50px;
+    left: 350px;
+    opacity: 0.5;
+}
+#choice-pack {
+    position: relative;
+    width: 350px;
+    top: 300px;
+    right: 100px;
+    opacity:0.5;
+    transition: 1s ease;
+}
+#choice-pack:hover {
+    opacity:1;
+    transition: 1s ease;
+}

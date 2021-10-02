@@ -41,17 +41,15 @@
             <option value="center-field">Center Field</option>
             <option value="right-field">Right Field</option>
         </select>
-        <input type="file" accept="image/*" name="photo" id="file" onchange="loadFile(event)" style="display: none;"
-            disabled>
-        <p><label for="file" id="photo" style="cursor: pointer; color:grey; border: solid 1px grey;">Upload
-                Image</label></p>
+        <input type="file" accept="image/*" name="photo" id="file" onchange="loadFile(event)" style="display: none;" disabled>
+        <p><label for="file" id="photo" style="cursor: pointer; color:grey; border: solid 1px grey;">Upload Image</label></p>
         <input type="text" id="player-size" size="23" placeholder="Please enter player size" disabled>
         <input type="text" id="player-top-bottom" size="23" placeholder="Please enter top/bottom value" disabled>
         <input type="text" id="player-left-right" size="23" placeholder="Please enter left/right value" disabled>
         <button id="add-reflection" disabled>Add Reflection</button>
         <input type="text" id="reflection-position" size="23" placeholder="Please enter reflection position" disabled>
         <input type="text" id="reflection-size" size="23" placeholder="Please enter reflection size" disabled>
-        <button id="add-reflection-gradient">Add Reflection Gradient</button>
+        <button id="add-reflection-gradient" disabled>Add Reflection Gradient</button>
         <button id="download" onclick="download()" disabled>Download</button>
     </div>
     <div class="container-of-image-with-text">
@@ -62,9 +60,8 @@
         <p id="overall"></p>
         <p id="year"></p>
         <p id="position-on-card"></p>
-        <img id="output" width="200px" src="">
-        <img id="reflection" width="200px" src="">
-        <img id="reflection-gradient" width="200px" src="">
+        <img id="output" src="">
+        <img id="reflection" src="">
     </div>
 </body>
 
