@@ -78,15 +78,15 @@
   position: relative;
   top: 110px;
 }
-#download {
+#download-card-art {
   position: relative;
   top: 120px;
 }
 #container {
   position: relative;
-  top: 400px;
   width: 300px;
   height: fit-content;
+  top: 400px;
   white-space: nowrap;
   margin: auto;
 }
@@ -95,19 +95,20 @@
   font-family: Castelar;
   color: white;
   margin: auto;
+  z-index: 3;
 }
 #overall {
   position: relative;
   font-size: 35px;
   font-family: Qanelas;
   color: white;
-  margin: 0;
+  width: fit-content;
   bottom: 505px;
   left: 305px;
-  width: fit-content;
   padding-left: 2px;
   letter-spacing: 2px;
   text-shadow: -2.5px 1.5px black;
+  margin: 0;
 }
 #year {
   position: relative;
