@@ -103,7 +103,8 @@
   color: white;
   margin: 0;
   bottom: 505px;
-  left: 142px;
+  left: 305px;
+  width: fit-content;
   padding-left: 2px;
   letter-spacing: 2px;
   text-shadow: -2.5px 1.5px black;
