@@ -86,7 +86,7 @@
   position: relative;
   top: 400px;
   width: 300px;
-  height: 100px;
+  height: fit-content;
   white-space: nowrap;
   margin: auto;
 }
@@ -101,7 +101,7 @@
   font-size: 35px;
   font-family: Qanelas;
   color: white;
-  margin: auto;
+  margin: 0;
   bottom: 505px;
   left: 142px;
   padding-left: 2px;
@@ -113,16 +113,18 @@
   font-size: 15px;
   font-family: Didot;
   color: black;
-  bottom: 571px;
+  bottom: 556px;
   padding-left: 6px;
   letter-spacing: 6px;
   text-align: center;
+  margin: 0;
 }
 #position-on-card {
   position: relative;
   font-family: Didot;
   color: black;
   text-align: center;
+  margin: 0;
 }
 #output {
   position: relative;
