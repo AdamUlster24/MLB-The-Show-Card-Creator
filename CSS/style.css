@@ -13,11 +13,16 @@
  #background-image-container {
   background-image: url();
   background-size: 370.4px 522.14px;
-  position: absolute;
-  display: inline-block;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
   width: 370.4px;
   height: 522.14px;
+  left: 50px;
   text-align: center;
+  margin: 0;
+  padding: 0;
  }
  .custom-select {
   float: left;
@@ -82,11 +87,12 @@
   display: inline-block;
   position: absolute;
   width: 300px;
-  height: fit-content;
+  height: 100px;
   top: 400px;
   white-space: nowrap;
   margin: 0;
   padding: 0;
+  align-self: center;
 }
 #player {
   display: inline-block;
@@ -119,8 +125,8 @@
   top: 8px;
   padding-left: 6px;
   letter-spacing: 6px;
- 
   margin: 0;
+  text-align: center;
 }
 #position-on-card {
   position: relative;
