@@ -14,28 +14,23 @@ function myFunction() {
     }
 }
 function cyYoung() {
-    const img = document.getElementsByClassName("image")[0];
-    img.src = "./Images/Cy Young.png";
+    document.getElementById("background-image-container").style.backgroundImage="url('./Images/Cy Young.png')";
     document.getElementById("player-name").removeAttribute('disabled');
 }
 function goldGlove() {
-    const img = document.getElementsByClassName("image")[0];
-    img.src = "./Images/Gold Glove.png";
+    document.getElementById("background-image-container").style.backgroundImage="url('./Images/Gold Glove.png')";
     document.getElementById("player-name").removeAttribute('disabled');
 }
 function MVP() {
-    const img = document.getElementsByClassName("image")[0];
-    img.src = "./Images/MVP.png";
+    document.getElementById("background-image-container").style.backgroundImage="url('./Images/MVP.png')";
     document.getElementById("player-name").removeAttribute('disabled');
 }
 function rookieOfTheYear() {
-    const img = document.getElementsByClassName("image")[0];
-    img.src = "./Images/Rookie of the Year.png";
+    document.getElementById("background-image-container").style.backgroundImage="url('./Images/Rookie of the Year.png')";
     document.getElementById("player-name").removeAttribute('disabled');
 }
 function silverSlugger() {
-    const img = document.getElementsByClassName("image")[0];
-    img.src = "./Images/Silver Slugger.png";
+    document.getElementById("background-image-container").style.backgroundImage="url('./Images/Silver Slugger.png')";
     document.getElementById("player-name").removeAttribute('disabled');
 }
 const playerName = document.getElementById("player-name");
