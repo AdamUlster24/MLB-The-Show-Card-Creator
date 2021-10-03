@@ -10,22 +10,21 @@
   font-family: Didot;
   src: url("../fonts/Didot LT Std Bold.otf");
 }
- #background-image-container {
-  background-image: url();
-  background-size: 370.4px 522.14px;
-  display: flex;
+.container-of-image-with-text {
   position: relative;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   width: 370.4px;
   height: 522.14px;
-  left: 50px;
   text-align: center;
-  margin: 0;
-  padding: 0;
  }
  .custom-select {
   float: left;
+}
+.image {
+  position: relative;
+  float: right;
+  max-width: 100%;
+  max-height: 100%;
 }
 #player-name {
   position: relative;
@@ -84,49 +83,43 @@
   top: 120px;
 }
 #container {
-  display: inline-block;
-  position: absolute;
+  position: relative;
   width: 300px;
-  height: 100px;
+  height: fit-content;
   top: 400px;
   white-space: nowrap;
-  margin: 0;
-  padding: 0;
-  align-self: center;
+  margin: auto;
 }
 #player {
-  display: inline-block;
-  position: absolute;
+  position: relative;
   font-family: Castelar;
   color: white;
+  margin: auto;
   z-index: 3;
-  margin: 0;
-  padding: 0;
 }
 #overall {
-  display: inline-block;
-  position: absolute;
+  position: relative;
   font-size: 35px;
   font-family: Qanelas;
   color: white;
-  top: 16px;
-  right: 21px;
+  width: fit-content;
+  bottom: 505px;
+  left: 305px;
   padding-left: 2px;
   letter-spacing: 2px;
   text-shadow: -2.5px 1.5px black;
   margin: 0;
 }
 #year {
-  display: inline-block;
-  position: absolute;
+  position: relative;
   font-size: 15px;
   font-family: Didot;
   color: black;
-  top: 8px;
+  bottom: 556px;
   padding-left: 6px;
   letter-spacing: 6px;
+  text-align: center;
   margin: 0;
-  line-height: 15px;
 }
 #position-on-card {
   position: relative;
@@ -138,7 +131,7 @@
 #output {
   position: relative;
   display: none;
-  width: 100%;
+  width: 400px;
   height: auto;
   bottom: 500px;
   z-index: 1;
@@ -147,8 +140,9 @@
 #reflection {
   position: relative;
   display: none;
-  width: 100%;
+  width: 400px;
   height: auto;
+  bottom: 500px;
   z-index: 2;
   opacity: 0.5;
   transform: rotate(180deg);

@@ -14,23 +14,28 @@ function myFunction() {
     }
 }
 function cyYoung() {
-    document.getElementById("background-image-container").style.backgroundImage="url('./Images/Cy Young.png')";
+    const img = document.getElementsByClassName("image")[0];
+    img.src = "./Images/Cy Young.png";
     document.getElementById("player-name").removeAttribute('disabled');
 }
 function goldGlove() {
-    document.getElementById("background-image-container").style.backgroundImage="url('./Images/Gold Glove.png')";
+    const img = document.getElementsByClassName("image")[0];
+    img.src = "./Images/Gold Glove.png";
     document.getElementById("player-name").removeAttribute('disabled');
 }
 function MVP() {
-    document.getElementById("background-image-container").style.backgroundImage="url('./Images/MVP.png')";
+    const img = document.getElementsByClassName("image")[0];
+    img.src = "./Images/MVP.png";
     document.getElementById("player-name").removeAttribute('disabled');
 }
 function rookieOfTheYear() {
-    document.getElementById("background-image-container").style.backgroundImage="url('./Images/Rookie of the Year.png')";
+    const img = document.getElementsByClassName("image")[0];
+    img.src = "./Images/Rookie of the Year.png";
     document.getElementById("player-name").removeAttribute('disabled');
 }
 function silverSlugger() {
-    document.getElementById("background-image-container").style.backgroundImage="url('./Images/Silver Slugger.png')";
+    const img = document.getElementsByClassName("image")[0];
+    img.src = "./Images/Silver Slugger.png";
     document.getElementById("player-name").removeAttribute('disabled');
 }
 const playerName = document.getElementById("player-name");
@@ -162,8 +167,8 @@ function loadFile(event) {
 };
 const playerSize = document.getElementById("player-size");
 playerSize.addEventListener('input', function () {
-    document.getElementById("output").style.width=100+parseInt(this.value)+"%";
-    document.getElementById("reflection").style.width=100+parseInt(this.value)+"%";
+    document.getElementById("output").style.width=400+parseInt(this.value)+"px";
+    document.getElementById("reflection").style.width=400+parseInt(this.value)+"px";
     document.getElementById("player-top-bottom").removeAttribute('disabled')
 })
 const playerTopBottom = document.getElementById("player-top-bottom");
