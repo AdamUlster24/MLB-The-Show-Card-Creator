@@ -19,4 +19,4 @@ https://salad24.github.io/MLB-The-Show-Awards-Card-Creator/</br></br>
 **Please enter reflection position:**</br>Enter the distance from the top of the card to the reflection. (The default is 0. Use negative numbers to move the reflection further upwards)</br></br>
 **Please enter reflection size:**</br>Enter the size of the reflection. (ex. 100) Try to make the reflection end at the top of the player's name</br></br>
 
-Note: You may have to download the player multiple times on Apple devices
+Note: You may have to download the card multiple times on Apple devices
