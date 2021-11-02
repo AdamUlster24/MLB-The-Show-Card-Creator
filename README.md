@@ -11,7 +11,7 @@ https://salad24.github.io/MLB-The-Show-Awards-Card-Creator/</br></br>
 **Please enter player overall:**</br>Enter player overall</br></br>
 **Please enter player year:**</br>Enter player year</br></br>
 **Select position:**</br>Select the position of the awards card</br></br>
-**Upload Image:**</br>Upload the image of the player without the background. Make sure to leave space between the player and the player's name for the reflection</br></br>
+**Upload Image:**</br>Upload the image of the player without the background. You can use something like remove.bg to do that. Make sure to leave space between the player and the player's name for the reflection</br></br>
 **Please enter player size:**</br>Enter the size of the player. (The default is 0. Use negative numbers to make the player smaller)</br></br>
 **Please enter top/bottom value:**</br>Enter the distance from the top of the card to the player. (The default is 0. Use negative numbers to move the player futher upwards)</br></br>
 **Please enter left/right value:**</br>Enter the distance from the left side of the card to the player. (The default is 0. Use negative numbers to move the player further to the left)</br></br>
@@ -19,10 +19,4 @@ https://salad24.github.io/MLB-The-Show-Awards-Card-Creator/</br></br>
 **Please enter reflection position:**</br>Enter the distance from the top of the card to the reflection. (The default is 0. Use negative numbers to move the reflection further upwards)</br></br>
 **Please enter reflection size:**</br>Enter the size of the reflection. (ex. 100) Try to make the reflection end at the top of the player's name</br></br>
 
-Note: There's no download function available yet. To take a screenshot of the player, use the following keyboard shortcuts:</br>
-
-**Windows**</br>
-Press "Windows + Shift + S"</br>
-
-**Mac**</br>
-Press "Shift-Command-4"
+Note: You may have to download the player multiple times on Apple devices
