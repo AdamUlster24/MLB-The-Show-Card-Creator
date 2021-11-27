@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+    <link rel="stylesheet" type="text/css" href="CSS/signature-series-card-creator.css">
+    <script src="JS/dom-to-image.js"></script>
+    <script src="JS/FileSaver.js"></script>
+    <script src="JS/download-card-art.js"></script>
+    <script defer src="JS/signature-series-card-creator.js"></script>
+
+    <title>MLB The Show Signature Series Card Creator</title>
+</head>
+<body>
+    <h2>MLB The Show Signature Series Card Creator</h2>
+    <div class="custom-select" style="width:200px;">
+        <select id="select-series">
+            <option value="0">Select team:</option>
+            <option value="arizona-diamondbacks">Arizona Diamondbacks</option>
+            <option value="atlanta-braves">Atlanta Braves</option>
+            <option value="baltimore-orioles">Baltimore Orioles</option>
+            <option value="boston-red-sox">Boston Red Sox</option>
+            <option value="chicago-white-sox">Chicago White Sox</option>
+            <option value="chicago-cubs">Chicago Cubs</option>
+            <option value="cincinnati-reds">Cincinnati Reds</option>
+            <option value="cleveland indians">Cleveland Indians</option>
+            <option value="colorado-rockies">Colorado Rockies</option>
+            <option value="detroit-tigers">Detroit Tigers</option>
+            <option value="houston-astros">Houston Astros</option>
+            <option value="kansas-city-royals">Kansas City Royals</option>
+            <option value="los-angeles-angels">Los Angeles Angels</option>
+            <option value="los-angeles-dodgers">Los Angeles Dodgers</option>
+            <option value="miami-marlins">Miami Marlins</option>
+            <option value="milwaukee-brewers">Milwaukee Brewers</option>
+            <option value="minnesota-twins">Minnesota Twins</option>
+            <option value="new-york-yankees">New York Yankees</option>
+            <option value="new-york-mets">New York Mets</option>
+            <option value="oakland-athletics">Oakland Athletics</option>
+            <option value="philadelphia-phillies">Philadelphia Phillies</option>
+            <option value="pittsburgh-pirates">Pittsburgh Pirates</option>
+            <option value="san-diego-padres">San Diego Padres</option>
+            <option value="san-francisco-giants">San Francisco Giants</option>
+            <option value="st.-louis-cardinals">St. Louis Cardinals</option>
+            <option value="tampa-bay-rays">Tampa Bay Rays</option>
+            <option value="texas-rangers">Texas Rangers</option>
+            <option value="toronto-blue-jays">Toronto Blue Jays</option>
+            <option value="washington-nationals">Washington Nationals</option>
+        </select>
+        <input type="text" id="player-first-name" size="23" placeholder="Please enter player first name" disabled>
+        <input type="text" id="player-last-name" size="23" placeholder="Please enter player last name" disabled>
+        <input type="text" id="player-overall" size="23" placeholder="Please enter player overall" disabled>
+        <select id="select-position" disabled>
+            <option value="0">Select position:</option>
+            <option value="starting-pitcher">Starting Pitcher</option>
+            <option value="relief-pitcher">Relief Pitcher</option>
+            <option value="closing-pitcher">Closing Pitcher</option>
+            <option value="catcher">Catcher</option>
+            <option value="first-base">First Base</option>
+            <option value="second-base">Second Base</option>
+            <option value="third-base">Third Base</option>
+            <option value="shortstop">Shortstop</option>
+            <option value="left-field">Left Field</option>
+            <option value="center-field">Center Field</option>
+            <option value="right-field">Right Field</option>
+        </select>
+        <input type="file" accept="image/*" name="photo1" id="file1" onchange="loadFile1(event)" style="display: none;" disabled>
+        <p><label for="file1" id="photo1" style="cursor: pointer; color:grey; border: solid 1px grey;">Upload Image</label></p>
+        <input type="text" id="player-size" size="23" placeholder="Please enter player size" disabled>
+        <input type="text" id="player-top-bottom" size="23" placeholder="Please enter top/bottom value" disabled>
+        <input type="text" id="player-left-right" size="23" placeholder="Please enter left/right value" disabled>
+        <input type="file" accept="image/*" name="photo2" id="file2" onchange="loadFile2(event)" style="display: none;" disabled>
+        <p><label for="file2" id="photo2" style="cursor: pointer; color:grey; border: solid 1px grey;">Upload Signature</label></p>
+        <input type="text" id="signature-size" size="23" placeholder="Please enter signature size" disabled>
+        <input type="text" id="signature-top-bottom" size="23" placeholder="Please enter top/bottom value" disabled>
+        <input type="text" id="signature-left-right" size="23" placeholder="Please enter left/right value" disabled>
+        <button id="download-card-art" onclick="downloadCardArt()" disabled>Download</button>
+    </div>
+    <div class="container-of-image-with-text">
+        <img id="team-background" src="">
+        <img id="template-rectangle" src="">
+        <img id="team-rectangle" src="">
+        <div id="container">
+        </div>
+        <div id="container2">
+        </div>
+        <p id="overall"></p>
+        <p id="position-on-card"></p>
+        <img id="output" src="">
+        <img id="signature" src="">
+    </div>
+</body>
+
+</html>

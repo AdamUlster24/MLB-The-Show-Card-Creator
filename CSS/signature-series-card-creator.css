@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Din Next LT Pro Light;
+    src: url("../fonts/DINNextLTPro-Light.ttf");
+  }
+  @font-face {
+    font-family: Din Next LT Pro Regular;
+    src: url("../fonts/DINNextLTPro-Regular.ttf");
+  }
+  @font-face {
+      font-family: Qanelas;
+      src: url("../fonts/QanelasSemiBold.otf");
+  }
+  @font-face {
+    font-family: Didot;
+    src: url("../fonts/Didot LT Std Bold.otf");
+  }
+  .container-of-image-with-text {
+    position: relative;
+    display: inline-block;
+    left: 50px;
+    width: 370.4px;
+    height: 522.14px;
+    z-index: 1;
+  }
+   #team-background {
+    position: absolute;
+    display: none;
+    width: 370.4px;
+    height: 522.14px;
+    z-index: 2;
+  }
+   #template-rectangle {
+    position: absolute;
+    display: none;
+    width: 370.4px;
+    height: 522.14px;
+    z-index: 3;
+  }
+   #team-rectangle {
+    position: absolute;
+    display: none;
+    width: 370.4px;
+    height: 522.14px;
+    z-index: 4;
+  }
+   .custom-select {
+    float: left;
+    z-index: 6;
+  }
+  #player-first-name {
+    position: relative;
+    top: 10px;
+  }
+  #player-last-name {
+    position: relative;
+    top: 20px;
+  }
+  #player-overall {
+    position: relative;
+    top: 30px;
+  }
+  #select-position {
+    position: relative;
+    top: 40px;
+  }
+  #photo1 {
+    position: relative;
+    top: 35px;
+  }
+  #player-size {
+    position: relative;
+    top: 30px;
+  }
+  #player-top-bottom {
+    position: relative;
+    top: 40px;
+  }
+  #player-left-right {
+    position: relative;
+    top: 50px;
+  }
+  #photo2 {
+    position: relative;
+    top: 45px;
+  }
+  #signature-size {
+    position: relative;
+    top: 40px;
+  }
+  #signature-top-bottom {
+    position: relative;
+    top: 50px;
+  }
+  #signature-left-right {
+    position: relative;
+    top: 60px;
+  }
+  #download-card-art {
+    position: relative;
+    top: 70px;
+  }
+  #container {
+    position: relative;
+    display: inline-block;
+    top: 412px;
+    left: 60.5px;
+    color: white;
+    text-transform: uppercase;
+    z-index: 5;
+    font-family: Din Next LT Pro Light;
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    margin: 0;
+  }
+  #container2 {
+    position: relative;
+    display: inline-block;
+    top: 412px;
+    left: 62.5px;
+    color: white;
+    text-transform: uppercase;
+    z-index: 5;
+    font-family: Din Next LT Pro Regular;
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    margin: 0;
+  }
+  #overall {
+    position: absolute;
+    font-family: Qanelas;
+    font-size: 35px;
+    top: 16px;
+    left: 305px;
+    color: white;
+    padding-left: 2px;
+    letter-spacing: 2px;
+    text-shadow: -2.5px 1.5px black;
+    margin: 0;
+    z-index: 5;
+  }
+  #position-on-card {
+    position: absolute;
+    font-family: Din Next LT Pro Regular;
+    font-size: 19px;
+    bottom: 88.5px;
+    color: white;
+    letter-spacing: 1.5px;
+    margin: 0;
+    z-index: 5;
+  }
+  #output {
+    position: absolute;
+    display: none;
+    bottom: 0px;
+    width: 400px;
+    height: 522.14px;
+    z-index: 5;
+    filter: drop-shadow(10px 0px 10px black);
+    object-fit: cover;
+    object-position: top;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #signature {
+    position: absolute;
+    display: none;
+    top: 425px;
+    left: 115px;
+    width: 150px;
+    height: auto;
+    z-index: 5;
+    filter: invert(27%) sepia(32%) saturate(2696%) hue-rotate(213deg) brightness(96%) contrast(98%);
+  }

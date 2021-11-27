@@ -10,12 +10,17 @@
     opacity:1;
     transition: 1s ease;
 }
-#signature-coming-soon {
+#signature-card-creator {
     position: relative;
     width: 250px;
     top: 50px;
     left: 350px;
     opacity: 0.5;
+    transition: 1s ease;
+}
+#signature-card-creator:hover {
+    opacity:1;
+    transition: 1s ease;
 }
 #choice-pack {
     position: relative;
