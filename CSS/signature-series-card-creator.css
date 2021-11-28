@@ -102,7 +102,7 @@
   #container {
     position: relative;
     display: inline-block;
-    top: 412px;
+    top: 410.5px;
     left: 60.5px;
     color: white;
     text-transform: uppercase;
@@ -115,7 +115,7 @@
   #container2 {
     position: relative;
     display: inline-block;
-    top: 412px;
+    top: 410.5px;
     left: 62.5px;
     color: white;
     text-transform: uppercase;
@@ -142,7 +142,7 @@
     position: absolute;
     font-family: Din Next LT Pro Regular;
     font-size: 19px;
-    bottom: 88.5px;
+    bottom: 89.5px;
     color: white;
     letter-spacing: 1.5px;
     margin: 0;
