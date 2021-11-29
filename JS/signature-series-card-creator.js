@@ -1,17 +1,42 @@
 const selectSeries = document.querySelector("#select-series");
 selectSeries.addEventListener("change", myFunction);
 function myFunction() {
-    if (this.value === "kansas-city-royals") {
+    if (this.value === "arizona-diamondbacks") {
+        arizonaDiamondbacks();
+    } else if (this.value === "atlanta-braves") {
+        atlantaBraves();
+    } else if (this.value === "baltimore-orioles") {
+        baltimoreOrioles();
+    } else if (this.value === "kansas-city-royals") {
         kansasCityRoyals();
-    } else if (this.value === "gold-glove") {
-        goldGlove();
-    } else if (this.value === "mvp") {
-        MVP();
-    } else if (this.value === "rookie-of-the-year") {
-        rookieOfTheYear();
-    } else if (this.value === "silver-slugger") {
-        silverSlugger();
     }
+}
+function arizonaDiamondbacks() {
+    document.getElementById("team-background").src="./Images/Arizona Diamondbacks Background.png";
+    document.getElementById("team-background").style.display="inline-block";
+    document.getElementById("template-rectangle").src="./Images/Signature Series Rectangle.png";
+    document.getElementById("template-rectangle").style.display="inline-block";
+    document.getElementById("team-rectangle").src="./Images/Arizona Diamondbacks Rectangle.png";
+    document.getElementById("team-rectangle").style.display="inline-block";
+    document.getElementById("player-first-name").removeAttribute('disabled');
+}
+function atlantaBraves() {
+    document.getElementById("team-background").src="./Images/Atlanta Braves Background.png";
+    document.getElementById("team-background").style.display="inline-block";
+    document.getElementById("template-rectangle").src="./Images/Signature Series Rectangle.png";
+    document.getElementById("template-rectangle").style.display="inline-block";
+    document.getElementById("team-rectangle").src="./Images/Atlanta Braves Rectangle.png";
+    document.getElementById("team-rectangle").style.display="inline-block";
+    document.getElementById("player-first-name").removeAttribute('disabled');
+}
+function baltimoreOrioles() {
+    document.getElementById("team-background").src="./Images/Baltimore Orioles Background.png";
+    document.getElementById("team-background").style.display="inline-block";
+    document.getElementById("template-rectangle").src="./Images/Signature Series Rectangle.png";
+    document.getElementById("template-rectangle").style.display="inline-block";
+    document.getElementById("team-rectangle").src="./Images/Baltimore Orioles Rectangle.png";
+    document.getElementById("team-rectangle").style.display="inline-block";
+    document.getElementById("player-first-name").removeAttribute('disabled');
 }
 function kansasCityRoyals() {
     document.getElementById("team-background").src="./Images/Kansas City Royals Background.png";
