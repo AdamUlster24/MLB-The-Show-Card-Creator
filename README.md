@@ -1,4 +1,4 @@
-**MLB The Show Awards Card Creator**</br>
+**MLB The Show Card Creator**</br>
 
 **To use:**</br>
 https://salad24.github.io/MLB-The-Show-Awards-Card-Creator/</br></br>
