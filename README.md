@@ -1,7 +1,7 @@
 **MLB The Show Card Creator**</br>
 
 **To use:**</br>
-https://salad24.github.io/MLB-The-Show-Awards-Card-Creator/</br></br>
+https://salad24.github.io/MLB-The-Show-Card-Creator/</br></br>
 
 **For help on how to use the website, please refer to the following:**</br></br>
 
