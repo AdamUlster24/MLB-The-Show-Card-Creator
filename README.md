@@ -1,9 +1,10 @@
 **MLB The Show Card Creator**</br>
+This website was designed to simplify the process of designing a custom player card in MLB The Show.</br>
 
 **To use:**</br>
 https://adamulster24.github.io/MLB-The-Show-Card-Creator/</br></br>
 
-**For help on how to use the website, please refer to the following:**</br></br>
+**For help on how to use the website, please refer to the following:**</br>
 
 **Select type of awards card:**</br>Select what type of awards card you would like to make (ex. silver slugger)</br></br>
 **Please enter player name:**</br>Enter player name</br></br>
